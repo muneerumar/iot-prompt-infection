@@ -1,0 +1,15 @@
+{
+  "version": "frozen-pilot-v3",
+  "spec": "two-tier:protectai-v2+ticket-judge",
+  "threshold": 0.5,
+  "tickets": "ProtectAI OR existing judge; ProtectAI first, short-circuit positive",
+  "other_kinds": "ProtectAI only",
+  "budget_unit": "one screened message regardless of tiers run",
+  "per_tier_cost_logging": true,
+  "judge_backend": "shared agents Llama backend; unchanged prompt, seed, temperature and four-token limit",
+  "evidence_scores": "results/20261104-145902_detector_selection_v2/scores.jsonl",
+  "evidence_sha256": "be992c539553b9caad1bd67651751b00f66390574ffa17ea942334241aa3c493",
+  "partial_v2_preserved": "results/20261104-175118_cal_llama_v2_llama-4bit",
+  "post_calibration_timing": "refresh projection from generation and per-tier scoring journals before pilot",
+  "pilot_interpretation": "agent-reworded C3 requests can look legitimate; downstream containment relies on lineage holds"
+}

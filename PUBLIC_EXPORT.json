@@ -1,0 +1,84 @@
+{
+  "distribution": "TrustGate public research-code and numeric-data snapshot",
+  "date": "2026-11-08",
+  "source_git_commit": "02c2e05dc048628dc2c06990f76f87566627235a",
+  "original_preregistration_tag": "prereg-round2",
+  "original_preregistration_commit": "3973bdab85d543bb30caf51b60c4a7f03674cd49",
+  "snapshot_not_original_tagged_checkout": true,
+  "manuscript_included": false,
+  "model_weights_included": false,
+  "experimental_attack_templates_included": false,
+  "private_free_text_traces_included": false,
+  "source_adaptations": [
+    {
+      "file": "src/iotpi/attacks.py",
+      "original_sha256": "410369a97e7b2b38eafcb959b2010b82f35f8841a94df50fd0e825b656812142",
+      "export_sha256": "1f894d539754318c4fd5bfaaca59500f3d16358502c5b57f78de582427b183b6",
+      "scope": "portable paths, documentation references, or synthetic test-fixture location; no experimental outcome changed"
+    },
+    {
+      "file": "src/iotpi/backends.py",
+      "original_sha256": "13d3182c6ea77ed2146582de6b6e436a29ea3742d0aad3ac45c3e0d1cbf3c182",
+      "export_sha256": "34fcc513c076a0ee6ef967e1d7f7911035a48d03cccedba6f2de5876f118e0b2",
+      "scope": "portable paths, documentation references, or synthetic test-fixture location; no experimental outcome changed"
+    },
+    {
+      "file": "src/iotpi/runlog.py",
+      "original_sha256": "e99f9ef942b3234e3c33c49d11bceb04e81bf87ff89c60bd4c1a1660d8f4c050",
+      "export_sha256": "5ac3591e0ae4075240ed93bfacc2afbc63deb0f917410be1f99101e40933f547",
+      "scope": "portable paths, documentation references, or synthetic test-fixture location; no experimental outcome changed"
+    },
+    {
+      "file": "scripts/confirm_round2.py",
+      "original_sha256": "f8b51aeb365c2e0e0515977f245ca40c85badec5ce595951a5fc2308ae6fb699",
+      "export_sha256": "18528de5c738a74952c9296942e9147663903b938b53bd1bededdebf8fa22d49",
+      "scope": "portable paths, documentation references, or synthetic test-fixture location; no experimental outcome changed"
+    },
+    {
+      "file": "scripts/repair_controller.py",
+      "original_sha256": "48ce034b24b7d23ade7dfa9598bc3d18292c73ef72e26ef4536f8353abff3f04",
+      "export_sha256": "33a7ebd52c044a0bc62edba12ae329f74f38708c9350c4ad664b48ebf626bc19",
+      "scope": "portable paths, documentation references, or synthetic test-fixture location; no experimental outcome changed"
+    },
+    {
+      "file": "scripts/round2_support.py",
+      "original_sha256": "590540e788d143c17c3d0ddb4b209068d8e443281f4ea61401eddee4a97819f5",
+      "export_sha256": "d0e510b8c807d6e920c669f8e9d44f5c2a4f42952bc72ccd000b3c50944f16dc",
+      "scope": "portable paths, documentation references, or synthetic test-fixture location; no experimental outcome changed"
+    },
+    {
+      "file": "scripts/workflow_support.py",
+      "original_sha256": "e66ad1ddb4c4e0a7187748aac358547f63d1dab258e09eccc303e0493529407b",
+      "export_sha256": "c2f6aa3e2e34fccd548d9f6a5df6c19d5188a1b8c0a2af1f0d4125dadc3a214a",
+      "scope": "portable paths, documentation references, or synthetic test-fixture location; no experimental outcome changed"
+    },
+    {
+      "file": "tests/test_guard.py",
+      "original_sha256": "7ffd4c657a33c3ae0a7b58a4230a5b0fcd45753cafff8b5ab0b53555657a2f56",
+      "export_sha256": "b6f46fc5b0c0fb3128a9c79d33b19f6fb22d05facd47a2d73340d53a06a77c4f",
+      "scope": "portable paths, documentation references, or synthetic test-fixture location; no experimental outcome changed"
+    },
+    {
+      "file": "configs/default.yaml",
+      "original_sha256": "74d0a7bd8f350a8a75e8227b1afb56f49a9e3839b4ff3bc4cdf78cd907e10e86",
+      "export_sha256": "2eebeb25b80fd76cd480791a57cac29ed027b06d0dad3e0d10bd0601bc56aefe",
+      "scope": "portable paths, documentation references, or synthetic test-fixture location; no experimental outcome changed"
+    },
+    {
+      "file": "configs/round2.yaml",
+      "original_sha256": "45e1afd80216ba89391f0bf1a28e0147fa5fc15ce8aae542ec65445ad10c3d85",
+      "export_sha256": "c1eb7ad8dab4d74ddbef1d100e8c3396afc26d8e2d08f4075ef4002d87a7d624",
+      "scope": "portable paths, documentation references, or synthetic test-fixture location; no experimental outcome changed"
+    }
+  ],
+  "numeric_data_exports": 33,
+  "excluded_categories": [
+    "unpublished manuscript, figures and manuscript audits",
+    "private experimental attack templates and raw message/generation text",
+    "model weights and download caches",
+    "environment folders and machine-local state",
+    "internal development records and Git history",
+    "aborted, duplicate, mock and transient monitoring runs"
+  ],
+  "license": "No distribution license has been selected; no third-party model weights are distributed."
+}

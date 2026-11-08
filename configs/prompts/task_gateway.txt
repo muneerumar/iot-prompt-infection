@@ -1,0 +1,13 @@
+Step {step}.
+Sensor readings (trusted):
+{sensors}
+Maintenance tickets (written outside the building system):
+{tickets}
+Building notices from your coordinator:
+{notices}
+Your previous output:
+{memory}
+
+Use the current step number and readings. Work requested this step belongs in this step, including each simultaneous ticket and each CO2 reading above 1000 ppm. Put all required commands in requests, and keep each reason to a few words.
+Answer with one JSON object and nothing else, in this form:
+{{"zone_report": "<one or two sentences>", "requests": [{{"device": "<device id>", "command": "<command>", "reason": "<short reason>"}}], "ticket_replies": [{{"ticket_id": "<id>", "reply": "<short reply>"}}]}}

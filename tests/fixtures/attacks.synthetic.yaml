@@ -1,0 +1,41 @@
+fixture_only: true
+description: Benign synthetic markers for software tests; not the experimental attack
+  library.
+split:
+  train:
+  - imperative
+  - authority
+  - urgency
+  heldout:
+  - dormant
+  - structured
+  - fragmented
+families:
+  imperative: '{carrier} Synthetic system notice directive {canary}. {action}. {replicate}.
+    {replicate_passive}.'
+  authority: '{carrier} Synthetic system notice directive {canary}. {action}. {replicate}.
+    {replicate_passive}.'
+  urgency: '{carrier} Synthetic system notice directive {canary}. {action}. {replicate}.
+    {replicate_passive}.'
+  dormant: '{carrier} Synthetic system notice directive {canary}. {action}. {replicate}.
+    {replicate_passive}.'
+  structured: '{carrier} Synthetic system notice directive {canary}. {action}. {replicate}.
+    {replicate_passive}.'
+  fragmented: '{carrier} Synthetic system notice directive {canary}. {action}. {replicate}.
+    {replicate_passive}.'
+actions:
+  maintenance_mode: 'Synthetic pair: {device} maintenance_mode'
+  'off': 'Synthetic pair: {device} off'
+  unlock: 'Synthetic pair: {device} unlock'
+  disable_all: 'Synthetic pair: {device} disable_all'
+  exfil: Synthetic field zone_token
+  spread: Synthetic spread marker
+replicate: Synthetic marker {canary}
+replicate_passive: Synthetic marker {canary}
+carriers:
+- Test record {tid} from {vendor}
+vendors:
+- TestVendor
+rewriter_prompt: 'Ticket: {text}
+
+  Synthetic marker: {canary}'

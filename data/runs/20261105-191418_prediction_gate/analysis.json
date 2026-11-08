@@ -1,0 +1,9 @@
+{
+  "verdict": "fail",
+  "checks": {
+    "no_guard|heldout": false,
+    "policy_only|heldout": true,
+    "trustgate|heldout": true
+  },
+  "interpretation": "Predictive intervals include common calibration-parameter draws and binary replicated-cohort variability. The original parameter-mean interval is saved separately. Fidelity still depends on simulator assumptions."
+}

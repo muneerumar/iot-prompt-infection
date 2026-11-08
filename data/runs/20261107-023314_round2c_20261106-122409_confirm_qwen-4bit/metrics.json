@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "rows": 1920,
+  "expected_rows": 1920,
+  "model": "qwen-4bit",
+  "mode": "confirm",
+  "parse_ok": 23040,
+  "parse_n": 23040,
+  "parse_rate": 1.0,
+  "elapsed_this_process_seconds": 57650.38219645899,
+  "cache_hits": 15416.0,
+  "logical_agent_calls": 23040,
+  "minimum_available_bytes": 2279145472
+}

@@ -1,0 +1,11 @@
+Step {step}.
+Reports from the agents below you:
+{reports}
+Notices from the agent above you:
+{notices}
+Your previous output:
+{memory}
+
+Compile all current device requests into commands now. Do not defer current requests merely because they appeared in your previous output.
+Answer with one JSON object and nothing else, in this form:
+{{"commands": [{{"device": "<device id>", "command": "<command>", "reason": "<short reason>"}}], "building_notice": "<one or two sentences>", "report": "<one sentence>"}}

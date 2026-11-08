@@ -1,0 +1,706 @@
+{
+  "classifier_all|adaptive": {
+    "n": 20,
+    "observed": [
+      0.25,
+      0.1,
+      0.45
+    ],
+    "predicted_mean": 0.13374999999999998,
+    "predicted_95": [
+      0.0,
+      0.25
+    ],
+    "parameter_mean_95": [
+      0.103625,
+      0.1519375
+    ],
+    "predictive_replications": 200,
+    "brier": 0.11206624999999999,
+    "mean_bound": null,
+    "observed_on_bound_episodes": null,
+    "observed_le_bound": null
+  },
+  "classifier_all|all": {
+    "n": 200,
+    "observed": [
+      0.17,
+      0.115,
+      0.225
+    ],
+    "predicted_mean": 0.121675,
+    "predicted_95": [
+      0.08,
+      0.165
+    ],
+    "parameter_mean_95": [
+      0.09579375,
+      0.13953749999999998
+    ],
+    "predictive_replications": 200,
+    "brier": 0.081908375,
+    "mean_bound": null,
+    "observed_on_bound_episodes": null,
+    "observed_le_bound": null
+  },
+  "classifier_all|heldout": {
+    "n": 90,
+    "observed": [
+      0.13333333333333333,
+      0.06666666666666667,
+      0.2087912087912088
+    ],
+    "predicted_mean": 0.11377777777777778,
+    "predicted_95": [
+      0.05555555555555555,
+      0.17777777777777778
+    ],
+    "parameter_mean_95": [
+      0.08833333333333333,
+      0.13158333333333336
+    ],
+    "predictive_replications": 200,
+    "brier": 0.08642555555555555,
+    "mean_bound": null,
+    "observed_on_bound_episodes": null,
+    "observed_le_bound": null
+  },
+  "classifier_all|train": {
+    "n": 90,
+    "observed": [
+      0.18888888888888888,
+      0.14285714285714285,
+      0.23404255319148937
+    ],
+    "predicted_mean": 0.12688888888888888,
+    "predicted_95": [
+      0.07750000000000001,
+      0.18888888888888888
+    ],
+    "parameter_mean_95": [
+      0.09379166666666666,
+      0.15586111111111114
+    ],
+    "predictive_replications": 200,
+    "brier": 0.07068944444444444,
+    "mean_bound": null,
+    "observed_on_bound_episodes": null,
+    "observed_le_bound": null
+  },
+  "classifier_cache|adaptive": {
+    "n": 20,
+    "observed": [
+      0.25,
+      0.1,
+      0.45
+    ],
+    "predicted_mean": 0.20625,
+    "predicted_95": [
+      0.09875000000000003,
+      0.35
+    ],
+    "parameter_mean_95": [
+      0.18668749999999998,
+      0.239125
+    ],
+    "predictive_replications": 200,
+    "brier": 0.08927125,
+    "mean_bound": null,
+    "observed_on_bound_episodes": null,
+    "observed_le_bound": null
+  },
+  "classifier_cache|all": {
+    "n": 200,
+    "observed": [
+      0.215,
+      0.15,
+      0.285
+    ],
+    "predicted_mean": 0.211275,
+    "predicted_95": [
+      0.16,
+      0.25512500000000005
+    ],
+    "parameter_mean_95": [
+      0.19307500000000002,
+      0.23928124999999997
+    ],
+    "predictive_replications": 200,
+    "brier": 0.080247125,
+    "mean_bound": null,
+    "observed_on_bound_episodes": null,
+    "observed_le_bound": null
+  },
+  "classifier_cache|heldout": {
+    "n": 90,
+    "observed": [
+      0.2111111111111111,
+      0.12087912087912088,
+      0.3076923076923077
+    ],
+    "predicted_mean": 0.20500000000000004,
+    "predicted_95": [
+      0.13333333333333333,
+      0.2669444444444445
+    ],
+    "parameter_mean_95": [
+      0.17843055555555556,
+      0.23129166666666667
+    ],
+    "predictive_replications": 200,
+    "brier": 0.08616777777777779,
+    "mean_bound": null,
+    "observed_on_bound_episodes": null,
+    "observed_le_bound": null
+  },
+  "classifier_cache|train": {
+    "n": 90,
+    "observed": [
+      0.2111111111111111,
+      0.14772727272727273,
+      0.27472527472527475
+    ],
+    "predicted_mean": 0.21866666666666668,
+    "predicted_95": [
+      0.14444444444444443,
+      0.2891666666666667
+    ],
+    "parameter_mean_95": [
+      0.18593055555555557,
+      0.2541805555555555
+    ],
+    "predictive_replications": 200,
+    "brier": 0.07232111111111111,
+    "mean_bound": null,
+    "observed_on_bound_episodes": null,
+    "observed_le_bound": null
+  },
+  "classifier_taint|adaptive": {
+    "n": 20,
+    "observed": [
+      0.25,
+      0.1,
+      0.45
+    ],
+    "predicted_mean": 0.20125,
+    "predicted_95": [
+      0.09875000000000003,
+      0.3
+    ],
+    "parameter_mean_95": [
+      0.16975000000000004,
+      0.2308125
+    ],
+    "predictive_replications": 200,
+    "brier": 0.10020875,
+    "mean_bound": null,
+    "observed_on_bound_episodes": null,
+    "observed_le_bound": null
+  },
+  "classifier_taint|all": {
+    "n": 200,
+    "observed": [
+      0.215,
+      0.15,
+      0.285
+    ],
+    "predicted_mean": 0.21097499999999997,
+    "predicted_95": [
+      0.17,
+      0.255
+    ],
+    "parameter_mean_95": [
+      0.19515000000000002,
+      0.23056250000000003
+    ],
+    "predictive_replications": 200,
+    "brier": 0.080233375,
+    "mean_bound": null,
+    "observed_on_bound_episodes": null,
+    "observed_le_bound": null
+  },
+  "classifier_taint|heldout": {
+    "n": 90,
+    "observed": [
+      0.2111111111111111,
+      0.12087912087912088,
+      0.3076923076923077
+    ],
+    "predicted_mean": 0.20616666666666666,
+    "predicted_95": [
+      0.13333333333333333,
+      0.2780555555555556
+    ],
+    "parameter_mean_95": [
+      0.17776388888888886,
+      0.24104166666666668
+    ],
+    "predictive_replications": 200,
+    "brier": 0.0829425,
+    "mean_bound": null,
+    "observed_on_bound_episodes": null,
+    "observed_le_bound": null
+  },
+  "classifier_taint|train": {
+    "n": 90,
+    "observed": [
+      0.2111111111111111,
+      0.14772727272727273,
+      0.27472527472527475
+    ],
+    "predicted_mean": 0.21794444444444447,
+    "predicted_95": [
+      0.14444444444444443,
+      0.2777777777777778
+    ],
+    "parameter_mean_95": [
+      0.19022222222222224,
+      0.24449999999999994
+    ],
+    "predictive_replications": 200,
+    "brier": 0.07308527777777779,
+    "mean_bound": null,
+    "observed_on_bound_episodes": null,
+    "observed_le_bound": null
+  },
+  "classifier_trust|adaptive": {
+    "n": 20,
+    "observed": [
+      0.25,
+      0.1,
+      0.45
+    ],
+    "predicted_mean": 0.23374999999999996,
+    "predicted_95": [
+      0.1,
+      0.35
+    ],
+    "parameter_mean_95": [
+      0.200875,
+      0.264125
+    ],
+    "predictive_replications": 200,
+    "brier": 0.07814375,
+    "mean_bound": null,
+    "observed_on_bound_episodes": null,
+    "observed_le_bound": null
+  },
+  "classifier_trust|all": {
+    "n": 200,
+    "observed": [
+      0.23,
+      0.16,
+      0.3
+    ],
+    "predicted_mean": 0.242875,
+    "predicted_95": [
+      0.18987500000000002,
+      0.290125
+    ],
+    "parameter_mean_95": [
+      0.21898125000000002,
+      0.26829374999999994
+    ],
+    "predictive_replications": 200,
+    "brier": 0.081045625,
+    "mean_bound": null,
+    "observed_on_bound_episodes": null,
+    "observed_le_bound": null
+  },
+  "classifier_trust|heldout": {
+    "n": 90,
+    "observed": [
+      0.23333333333333334,
+      0.14606741573033707,
+      0.32558139534883723
+    ],
+    "predicted_mean": 0.23416666666666666,
+    "predicted_95": [
+      0.15555555555555556,
+      0.3111111111111111
+    ],
+    "parameter_mean_95": [
+      0.2098194444444445,
+      0.2674583333333333
+    ],
+    "predictive_replications": 200,
+    "brier": 0.08708694444444445,
+    "mean_bound": null,
+    "observed_on_bound_episodes": null,
+    "observed_le_bound": null
+  },
+  "classifier_trust|train": {
+    "n": 90,
+    "observed": [
+      0.2222222222222222,
+      0.15555555555555556,
+      0.2903225806451613
+    ],
+    "predicted_mean": 0.2536111111111111,
+    "predicted_95": [
+      0.17777777777777778,
+      0.3111111111111111
+    ],
+    "parameter_mean_95": [
+      0.22261111111111107,
+      0.2811944444444444
+    ],
+    "predictive_replications": 200,
+    "brier": 0.07564916666666667,
+    "mean_bound": null,
+    "observed_on_bound_episodes": null,
+    "observed_le_bound": null
+  },
+  "no_guard|adaptive": {
+    "n": 20,
+    "observed": [
+      0.45,
+      0.25,
+      0.65
+    ],
+    "predicted_mean": 0.52375,
+    "predicted_95": [
+      0.35,
+      0.7
+    ],
+    "parameter_mean_95": [
+      0.4573125,
+      0.5569375
+    ],
+    "predictive_replications": 200,
+    "brier": 0.18063875000000001,
+    "mean_bound": 0.9957120713305899,
+    "observed_on_bound_episodes": 0.4166666666666667,
+    "observed_le_bound": true
+  },
+  "no_guard|all": {
+    "n": 200,
+    "observed": [
+      0.375,
+      0.29,
+      0.47
+    ],
+    "predicted_mean": 0.561525,
+    "predicted_95": [
+      0.475,
+      0.6402500000000001
+    ],
+    "parameter_mean_95": [
+      0.5182937499999999,
+      0.6034687500000002
+    ],
+    "predictive_replications": 200,
+    "brier": 0.214202375,
+    "mean_bound": 0.9987136213991771,
+    "observed_on_bound_episodes": 0.2916666666666667,
+    "observed_le_bound": true
+  },
+  "no_guard|heldout": {
+    "n": 90,
+    "observed": [
+      0.3333333333333333,
+      0.22727272727272727,
+      0.45555555555555555
+    ],
+    "predicted_mean": 0.5517777777777777,
+    "predicted_95": [
+      0.44416666666666665,
+      0.6666666666666666
+    ],
+    "parameter_mean_95": [
+      0.4948194444444444,
+      0.6145555555555554
+    ],
+    "predictive_replications": 200,
+    "brier": 0.2354716666666667,
+    "mean_bound": 1.0,
+    "observed_on_bound_episodes": 0.2222222222222222,
+    "observed_le_bound": true
+  },
+  "no_guard|train": {
+    "n": 90,
+    "observed": [
+      0.4,
+      0.3023255813953488,
+      0.5
+    ],
+    "predicted_mean": 0.5796666666666667,
+    "predicted_95": [
+      0.4777777777777778,
+      0.6666666666666666
+    ],
+    "parameter_mean_95": [
+      0.5321944444444444,
+      0.612625
+    ],
+    "predictive_replications": 200,
+    "brier": 0.2003916666666667,
+    "mean_bound": 0.9980942539247066,
+    "observed_on_bound_episodes": 0.3333333333333333,
+    "observed_le_bound": true
+  },
+  "policy_only|adaptive": {
+    "n": 20,
+    "observed": [
+      0.25,
+      0.1,
+      0.45
+    ],
+    "predicted_mean": 0.2915,
+    "predicted_95": [
+      0.15,
+      0.4
+    ],
+    "parameter_mean_95": [
+      0.26031249999999995,
+      0.336625
+    ],
+    "predictive_replications": 200,
+    "brier": 0.0750725,
+    "mean_bound": 0.3311893689986283,
+    "observed_on_bound_episodes": 0.08333333333333333,
+    "observed_le_bound": true
+  },
+  "policy_only|all": {
+    "n": 200,
+    "observed": [
+      0.25,
+      0.18,
+      0.315
+    ],
+    "predicted_mean": 0.29555,
+    "predicted_95": [
+      0.245,
+      0.345
+    ],
+    "parameter_mean_95": [
+      0.27183749999999995,
+      0.32600000000000007
+    ],
+    "predictive_replications": 200,
+    "brier": 0.08035375,
+    "mean_bound": 0.33269014403292185,
+    "observed_on_bound_episodes": 0.08333333333333333,
+    "observed_le_bound": true
+  },
+  "policy_only|heldout": {
+    "n": 90,
+    "observed": [
+      0.24444444444444444,
+      0.15730337078651685,
+      0.32967032967032966
+    ],
+    "predicted_mean": 0.28105555555555556,
+    "predicted_95": [
+      0.2111111111111111,
+      0.3558333333333334
+    ],
+    "parameter_mean_95": [
+      0.23997222222222223,
+      0.3319027777777777
+    ],
+    "predictive_replications": 200,
+    "brier": 0.08762361111111111,
+    "mean_bound": 0.3333333333333333,
+    "observed_on_bound_episodes": 0.07407407407407407,
+    "observed_le_bound": true
+  },
+  "policy_only|train": {
+    "n": 90,
+    "observed": [
+      0.25555555555555554,
+      0.18085106382978725,
+      0.32954545454545453
+    ],
+    "predicted_mean": 0.3109444444444444,
+    "predicted_95": [
+      0.24444444444444444,
+      0.36666666666666664
+    ],
+    "parameter_mean_95": [
+      0.27604166666666674,
+      0.3383611111111111
+    ],
+    "predictive_replications": 200,
+    "brier": 0.0742575,
+    "mean_bound": 0.33238046029568663,
+    "observed_on_bound_episodes": 0.09259259259259259,
+    "observed_le_bound": true
+  },
+  "provenance_block|adaptive": {
+    "n": 20,
+    "observed": [
+      0.2,
+      0.05,
+      0.4
+    ],
+    "predicted_mean": 0.17375,
+    "predicted_95": [
+      0.1,
+      0.2
+    ],
+    "parameter_mean_95": [
+      0.151125,
+      0.2
+    ],
+    "predictive_replications": 200,
+    "brier": 0.0068912500000000015,
+    "mean_bound": 0.0,
+    "observed_on_bound_episodes": 0.0,
+    "observed_le_bound": true
+  },
+  "provenance_block|all": {
+    "n": 200,
+    "observed": [
+      0.2,
+      0.12,
+      0.275
+    ],
+    "predicted_mean": 0.163325,
+    "predicted_95": [
+      0.12987500000000002,
+      0.2
+    ],
+    "parameter_mean_95": [
+      0.14157499999999998,
+      0.19453750000000003
+    ],
+    "predictive_replications": 200,
+    "brier": 0.010662875,
+    "mean_bound": 0.0,
+    "observed_on_bound_episodes": 0.0,
+    "observed_le_bound": true
+  },
+  "provenance_block|heldout": {
+    "n": 90,
+    "observed": [
+      0.2,
+      0.11956521739130435,
+      0.2823529411764706
+    ],
+    "predicted_mean": 0.14822222222222223,
+    "predicted_95": [
+      0.08888888888888889,
+      0.2
+    ],
+    "parameter_mean_95": [
+      0.11759722222222226,
+      0.2
+    ],
+    "predictive_replications": 200,
+    "brier": 0.013549444444444446,
+    "mean_bound": 0.0,
+    "observed_on_bound_episodes": 0.0,
+    "observed_le_bound": true
+  },
+  "provenance_block|train": {
+    "n": 90,
+    "observed": [
+      0.2,
+      0.11956521739130435,
+      0.2826086956521739
+    ],
+    "predicted_mean": 0.1761111111111111,
+    "predicted_95": [
+      0.13333333333333333,
+      0.2
+    ],
+    "parameter_mean_95": [
+      0.14615277777777774,
+      0.199625
+    ],
+    "predictive_replications": 200,
+    "brier": 0.008614444444444445,
+    "mean_bound": 0.0,
+    "observed_on_bound_episodes": 0.0,
+    "observed_le_bound": true
+  },
+  "trustgate|adaptive": {
+    "n": 20,
+    "observed": [
+      0.25,
+      0.1,
+      0.45
+    ],
+    "predicted_mean": 0.14025,
+    "predicted_95": [
+      0.04875000000000003,
+      0.3
+    ],
+    "parameter_mean_95": [
+      0.10918750000000002,
+      0.1671875
+    ],
+    "predictive_replications": 200,
+    "brier": 0.11900375,
+    "mean_bound": null,
+    "observed_on_bound_episodes": null,
+    "observed_le_bound": null
+  },
+  "trustgate|all": {
+    "n": 200,
+    "observed": [
+      0.17,
+      0.115,
+      0.225
+    ],
+    "predicted_mean": 0.125075,
+    "predicted_95": [
+      0.074875,
+      0.17
+    ],
+    "parameter_mean_95": [
+      0.10065000000000002,
+      0.1439
+    ],
+    "predictive_replications": 200,
+    "brier": 0.087258125,
+    "mean_bound": null,
+    "observed_on_bound_episodes": null,
+    "observed_le_bound": null
+  },
+  "trustgate|heldout": {
+    "n": 90,
+    "observed": [
+      0.13333333333333333,
+      0.06666666666666667,
+      0.2087912087912088
+    ],
+    "predicted_mean": 0.1171111111111111,
+    "predicted_95": [
+      0.06666666666666667,
+      0.17805555555555563
+    ],
+    "parameter_mean_95": [
+      0.09494444444444444,
+      0.13184722222222217
+    ],
+    "predictive_replications": 200,
+    "brier": 0.08517444444444444,
+    "mean_bound": null,
+    "observed_on_bound_episodes": null,
+    "observed_le_bound": null
+  },
+  "trustgate|train": {
+    "n": 90,
+    "observed": [
+      0.18888888888888888,
+      0.14285714285714285,
+      0.23404255319148937
+    ],
+    "predicted_mean": 0.12966666666666665,
+    "predicted_95": [
+      0.06666666666666667,
+      0.2
+    ],
+    "parameter_mean_95": [
+      0.09929166666666668,
+      0.1563472222222222
+    ],
+    "predictive_replications": 200,
+    "brier": 0.0822872222222222,
+    "mean_bound": null,
+    "observed_on_bound_episodes": null,
+    "observed_le_bound": null
+  }
+}

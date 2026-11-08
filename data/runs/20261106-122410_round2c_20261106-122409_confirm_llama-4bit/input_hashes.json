@@ -1,0 +1,13 @@
+{
+  "prompts": {
+    "task_coordinator.txt": "8093ff1bfd5d137d7b2d001da751622db7f3d8e60b1da27f6875742d7e718811",
+    "role_gateway.txt": "096be558398554efef09b60cafdf4adfb0dd62faff6722e6baee844e032a1c7a",
+    "judge.txt": "65d732f88b54532e4f91e28b38dcfc4dd2abe6635c9103c53dff6bde9eeca9ee",
+    "spotlight_note.txt": "0f937c68d8a2f38863441751aa533af7ba589f26176eb446dd1656b86681255b",
+    "task_gateway.txt": "b0bb7f2bb7c39d296b786e68db37d95afd23b4893321f3b8a497414f51128b09",
+    "role_coordinator.txt": "caed11cb6e41035ec3e38245fb77789d073802fb996363e5e77eff43844eb748"
+  },
+  "attacks": "053ff1696550f4e400ec289d70e0b4859d9112ef6637474ded06b769871d828b",
+  "risk_constant": "88ffc08c4bf1de30dcc3e4de26d49ec18bac35f080a73a52eb2de2cedf26eb81",
+  "config_sha256": "4832739fdd3a46a019759e5ea3e1c3d84d0127fc9d461996f2f446c87918e998"
+}

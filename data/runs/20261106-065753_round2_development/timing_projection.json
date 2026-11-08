@@ -1,0 +1,47 @@
+{
+  "models": {
+    "llama-4bit": {
+      "episodes": 320,
+      "condition_rows": 1920,
+      "logical_agent_calls": 23040,
+      "estimated_hours": 11.379106407552566,
+      "uncached_hours": 59.22464367599281,
+      "profile": {
+        "directory": "./results/20261106-084841_round2_timing_timing_llama-4bit",
+        "logical_agent_calls": 144,
+        "unique_agent_calls": 24,
+        "unique_fraction": 0.16666666666666666,
+        "mean_agent_seconds": 8.971038237832545,
+        "screen_seconds_two_episodes": 31.54817400003958,
+        "mean_ticket_screen_seconds": 1.3271440038086093,
+        "parse_rate": 1.0,
+        "budget_violations": 0,
+        "minimum_available_bytes": 3331883008
+      }
+    },
+    "qwen-4bit": {
+      "episodes": 320,
+      "condition_rows": 1920,
+      "logical_agent_calls": 23040,
+      "estimated_hours": 15.091424025259968,
+      "uncached_hours": 44.274472653470966,
+      "profile": {
+        "directory": "./results/20261106-085233_round2_timing_timing_qwen-4bit",
+        "logical_agent_calls": 144,
+        "unique_agent_calls": 45,
+        "unique_fraction": 0.3125,
+        "mean_agent_seconds": 6.632511051866135,
+        "screen_seconds_two_episodes": 33.93970075598918,
+        "mean_ticket_screen_seconds": 1.3508953080011492,
+        "parse_rate": 1.0,
+        "budget_violations": 0,
+        "minimum_available_bytes": 3560341504
+      }
+    }
+  },
+  "total_hours": 26.470530432812534,
+  "uncached_total_hours": 103.49911632946377,
+  "c3_main_per_family": 40,
+  "method": "Two fixed calibration episodes per model (one benign, one authority C3). Agent reuse is the fraction of unique full prompt/seed/settings keys, independent of restarts. Screen logical time is extrapolated without screen cache savings. Add maximum seven adaptive rewrite calls and eight ticket queries per adaptive episode. No attack outcome enters the estimator. Short probes may misestimate confirmatory reuse or output lengths; uncached sensitivity is reported.",
+  "predefined_size_reduction_applied": false
+}

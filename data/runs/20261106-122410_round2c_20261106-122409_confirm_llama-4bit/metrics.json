@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "rows": 1920,
+  "expected_rows": 1920,
+  "model": "llama-4bit",
+  "mode": "confirm",
+  "parse_ok": 22882,
+  "parse_n": 23036,
+  "parse_rate": 0.993314811599236,
+  "elapsed_this_process_seconds": 50942.57311975,
+  "cache_hits": 17880.0,
+  "logical_agent_calls": 23036,
+  "minimum_available_bytes": 2723577856
+}

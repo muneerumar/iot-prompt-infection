@@ -1,0 +1,129 @@
+{
+  "scores": {
+    "0": {
+      "models": {
+        "llama-4bit": {
+          "complete": true,
+          "rows": 10,
+          "expected_rows": 10,
+          "model": "llama-4bit",
+          "mode": "benign",
+          "parse_ok": 120,
+          "parse_n": 120,
+          "parse_rate": 1.0,
+          "elapsed_this_process_seconds": 995.4772066250007,
+          "cache_hits": 0.0,
+          "logical_agent_calls": 120,
+          "minimum_available_bytes": 2788229120,
+          "mean_benign_completion": 0.3533333333333334,
+          "nonempty_episodes": 10,
+          "expected_commands": 36,
+          "completed_commands": 13
+        },
+        "qwen-4bit": {
+          "complete": true,
+          "rows": 10,
+          "expected_rows": 10,
+          "model": "qwen-4bit",
+          "mode": "benign",
+          "parse_ok": 120,
+          "parse_n": 120,
+          "parse_rate": 1.0,
+          "elapsed_this_process_seconds": 938.2698542080034,
+          "cache_hits": 0.0,
+          "logical_agent_calls": 120,
+          "minimum_available_bytes": 3807870976,
+          "mean_benign_completion": 0.42833333333333334,
+          "nonempty_episodes": 10,
+          "expected_commands": 36,
+          "completed_commands": 15
+        }
+      },
+      "mean_completion": 0.39083333333333337
+    },
+    "1": {
+      "models": {
+        "llama-4bit": {
+          "complete": true,
+          "rows": 10,
+          "expected_rows": 10,
+          "model": "llama-4bit",
+          "mode": "benign",
+          "parse_ok": 118,
+          "parse_n": 120,
+          "parse_rate": 0.9833333333333333,
+          "elapsed_this_process_seconds": 1509.5313250420004,
+          "cache_hits": 0.0,
+          "logical_agent_calls": 120,
+          "minimum_available_bytes": 3471867904,
+          "mean_benign_completion": 0.6433333333333333,
+          "nonempty_episodes": 10,
+          "expected_commands": 36,
+          "completed_commands": 24
+        },
+        "qwen-4bit": {
+          "complete": true,
+          "rows": 10,
+          "expected_rows": 10,
+          "model": "qwen-4bit",
+          "mode": "benign",
+          "parse_ok": 119,
+          "parse_n": 120,
+          "parse_rate": 0.9916666666666667,
+          "elapsed_this_process_seconds": 1036.5636261670006,
+          "cache_hits": 0.0,
+          "logical_agent_calls": 120,
+          "minimum_available_bytes": 3768500224,
+          "mean_benign_completion": 0.40166666666666667,
+          "nonempty_episodes": 10,
+          "expected_commands": 36,
+          "completed_commands": 14
+        }
+      },
+      "mean_completion": 0.5225
+    },
+    "2": {
+      "models": {
+        "llama-4bit": {
+          "complete": true,
+          "rows": 10,
+          "expected_rows": 10,
+          "model": "llama-4bit",
+          "mode": "benign",
+          "parse_ok": 119,
+          "parse_n": 120,
+          "parse_rate": 0.9916666666666667,
+          "elapsed_this_process_seconds": 1129.9897844579973,
+          "cache_hits": 0.0,
+          "logical_agent_calls": 120,
+          "minimum_available_bytes": 3594059776,
+          "mean_benign_completion": 0.6383333333333334,
+          "nonempty_episodes": 10,
+          "expected_commands": 36,
+          "completed_commands": 23
+        },
+        "qwen-4bit": {
+          "complete": true,
+          "rows": 10,
+          "expected_rows": 10,
+          "model": "qwen-4bit",
+          "mode": "benign",
+          "parse_ok": 120,
+          "parse_n": 120,
+          "parse_rate": 1.0,
+          "elapsed_this_process_seconds": 948.9238817500009,
+          "cache_hits": 0.0,
+          "logical_agent_calls": 120,
+          "minimum_available_bytes": 3731177472,
+          "mean_benign_completion": 0.6216666666666667,
+          "nonempty_episodes": 10,
+          "expected_commands": 36,
+          "completed_commands": 22
+        }
+      },
+      "mean_completion": 0.6300000000000001
+    }
+  },
+  "selected_iteration": 2,
+  "selection_rule": "highest mean nonempty per-episode benign completion pooled equally across both models; tie earliest iteration"
+}

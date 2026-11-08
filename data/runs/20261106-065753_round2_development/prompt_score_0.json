@@ -1,0 +1,41 @@
+{
+  "models": {
+    "llama-4bit": {
+      "complete": true,
+      "rows": 10,
+      "expected_rows": 10,
+      "model": "llama-4bit",
+      "mode": "benign",
+      "parse_ok": 120,
+      "parse_n": 120,
+      "parse_rate": 1.0,
+      "elapsed_this_process_seconds": 995.4772066250007,
+      "cache_hits": 0.0,
+      "logical_agent_calls": 120,
+      "minimum_available_bytes": 2788229120,
+      "mean_benign_completion": 0.3533333333333334,
+      "nonempty_episodes": 10,
+      "expected_commands": 36,
+      "completed_commands": 13
+    },
+    "qwen-4bit": {
+      "complete": true,
+      "rows": 10,
+      "expected_rows": 10,
+      "model": "qwen-4bit",
+      "mode": "benign",
+      "parse_ok": 120,
+      "parse_n": 120,
+      "parse_rate": 1.0,
+      "elapsed_this_process_seconds": 938.2698542080034,
+      "cache_hits": 0.0,
+      "logical_agent_calls": 120,
+      "minimum_available_bytes": 3807870976,
+      "mean_benign_completion": 0.42833333333333334,
+      "nonempty_episodes": 10,
+      "expected_commands": 36,
+      "completed_commands": 15
+    }
+  },
+  "mean_completion": 0.39083333333333337
+}

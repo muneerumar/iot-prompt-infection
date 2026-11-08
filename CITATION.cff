@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Cite the repository snapshot and version when using this code or data."
+type: software
+title: "TrustGate: Budgeted Local Containment in Multi-Agent IoT Workflows"
+authors:
+  - family-names: Umar
+    given-names: Muhammad Muneer
+version: 0.1.0
+date-released: 2026-11-08

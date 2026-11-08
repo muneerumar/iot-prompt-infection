@@ -1,0 +1,18 @@
+{
+  "git_tag": "prereg-round2",
+  "git_commit": "3973bdab85d543bb30caf51b60c4a7f03674cd49",
+  "preregistration_sha256": "b7c731adcd9a81725b33942fa267322579c5b39b2b31576bf9767ef677449434",
+  "original_config_prompt_hashes": {
+    "configs/default.yaml": "74d0a7bd8f350a8a75e8227b1afb56f49a9e3839b4ff3bc4cdf78cd907e10e86",
+    "configs/detector_design_v3.json": "f1647253848e029d11ce11c4c1c2ec4911ea9f4d0f7ff91289141d71a4ae1017",
+    "configs/detector_selection_v2.json": "ce35ab320e9daedec077f51a214102f6e2c7ac1264159b953732d5cc65de1f98",
+    "configs/prompts/judge.txt": "65d732f88b54532e4f91e28b38dcfc4dd2abe6635c9103c53dff6bde9eeca9ee",
+    "configs/prompts/role_coordinator.txt": "caed11cb6e41035ec3e38245fb77789d073802fb996363e5e77eff43844eb748",
+    "configs/prompts/role_gateway.txt": "096be558398554efef09b60cafdf4adfb0dd62faff6722e6baee844e032a1c7a",
+    "configs/prompts/spotlight_note.txt": "0f937c68d8a2f38863441751aa533af7ba589f26176eb446dd1656b86681255b",
+    "configs/prompts/task_coordinator.txt": "8093ff1bfd5d137d7b2d001da751622db7f3d8e60b1da27f6875742d7e718811",
+    "configs/prompts/task_gateway.txt": "b0bb7f2bb7c39d296b786e68db37d95afd23b4893321f3b8a497414f51128b09",
+    "configs/round2.yaml": "45e1afd80216ba89391f0bf1a28e0147fa5fc15ce8aae542ec65445ad10c3d85"
+  },
+  "scope": "Historical local pre-registration; the public snapshot has portable paths and synthetic test inputs. It is not the original tagged Git checkout."
+}

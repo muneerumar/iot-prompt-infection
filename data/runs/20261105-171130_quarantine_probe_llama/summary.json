@@ -1,0 +1,35 @@
+{
+  "conditions": {
+    "trustgate_control": {
+      "n_attack": 0,
+      "n_benign": 30,
+      "legit_done_rate": [
+        0.5175595238095237,
+        0.3942307692307692,
+        0.6351190476190477
+      ],
+      "false_drops_per_episode": 0.0,
+      "false_quarantines_per_episode": 0.0,
+      "screens_per_episode": 10.266666666666667,
+      "screen_seconds_per_episode": 4.428028249907462,
+      "llm_seconds_per_episode": 144.97596749846466,
+      "alert_bytes_per_episode": 0.0
+    },
+    "trustgate_false_quarantine": {
+      "n_attack": 0,
+      "n_benign": 30,
+      "legit_done_rate": [
+        0.5452380952380952,
+        0.4113095238095238,
+        0.6929487179487179
+      ],
+      "false_drops_per_episode": 0.1,
+      "false_quarantines_per_episode": 1.0,
+      "screens_per_episode": 9.2,
+      "screen_seconds_per_episode": 5.0418085144337965,
+      "llm_seconds_per_episode": 119.17102015033839,
+      "alert_bytes_per_episode": 21.6
+    }
+  },
+  "paired": {}
+}

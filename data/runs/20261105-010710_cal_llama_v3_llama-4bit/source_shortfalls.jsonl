@@ -1,0 +1,7 @@
+{"unit": "coordinator_report", "family": "structured", "requested": 60, "available_sources": 5, "receiving_units": 50, "shortfall": 10}
+{"unit": "gateway_notice", "family": "authority", "requested": 60, "available_sources": 0, "receiving_units": 0, "shortfall": 60}
+{"unit": "gateway_notice", "family": "dormant", "requested": 60, "available_sources": 0, "receiving_units": 0, "shortfall": 60}
+{"unit": "gateway_notice", "family": "fragmented", "requested": 60, "available_sources": 0, "receiving_units": 0, "shortfall": 60}
+{"unit": "gateway_notice", "family": "imperative", "requested": 60, "available_sources": 5, "receiving_units": 50, "shortfall": 10}
+{"unit": "gateway_notice", "family": "structured", "requested": 60, "available_sources": 0, "receiving_units": 0, "shortfall": 60}
+{"unit": "gateway_notice", "family": "urgency", "requested": 60, "available_sources": 2, "receiving_units": 20, "shortfall": 40}

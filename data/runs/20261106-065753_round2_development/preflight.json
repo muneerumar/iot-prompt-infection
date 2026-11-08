@@ -1,0 +1,22 @@
+{
+  "llama-4bit": {
+    "model": "llama-4bit",
+    "deterministic": true,
+    "parse_ok": 8,
+    "parse_n": 8,
+    "parse_rate": 1.0,
+    "minimum_available_bytes": 3553263616,
+    "peak_metal_bytes": 5085285612,
+    "model_source_revision": "0e9e39f249a16976918f6564b8830bc894c89659"
+  },
+  "qwen-4bit": {
+    "model": "qwen-4bit",
+    "deterministic": true,
+    "parse_ok": 8,
+    "parse_n": 8,
+    "parse_rate": 1.0,
+    "minimum_available_bytes": 3658989568,
+    "peak_metal_bytes": 4846531768,
+    "model_source_revision": "a09a35458c702b33eeacc393d103063234e8bc28"
+  }
+}

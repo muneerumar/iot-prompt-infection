@@ -1,0 +1,103 @@
+{
+  "models": {
+    "llama-4bit": {
+      "H1": {
+        "H1a": {
+          "comparator": "classifier_cache",
+          "n": 240,
+          "trustgate_harm": 66,
+          "comparator_harm": 93,
+          "harm_lower": true,
+          "n01": 28,
+          "n10": 1,
+          "p": 1.1175870895385742e-07,
+          "p_holm": 1.1175870895385742e-07,
+          "holds": true
+        },
+        "H1b": {
+          "comparator": "classifier_trust",
+          "n": 240,
+          "trustgate_harm": 66,
+          "comparator_harm": 104,
+          "harm_lower": true,
+          "n01": 40,
+          "n10": 2,
+          "p": 4.1109160520136356e-10,
+          "p_holm": 8.221832104027271e-10,
+          "holds": true
+        }
+      },
+      "H2": {
+        "classifier_cache": {
+          "mean_difference": -0.009444444444444443,
+          "lower_one_sided_95": -0.02138157894736842,
+          "episodes": 300,
+          "buildings": 40,
+          "bootstrap_reps": 10000,
+          "seed": 13,
+          "noninferior": true
+        },
+        "classifier_trust": {
+          "mean_difference": 0.0010000000000000015,
+          "lower_one_sided_95": -0.014167494481236201,
+          "episodes": 300,
+          "buildings": 40,
+          "bootstrap_reps": 10000,
+          "seed": 13,
+          "noninferior": true
+        }
+      },
+      "wins": true
+    },
+    "qwen-4bit": {
+      "H1": {
+        "H1a": {
+          "comparator": "classifier_cache",
+          "n": 240,
+          "trustgate_harm": 1,
+          "comparator_harm": 14,
+          "harm_lower": true,
+          "n01": 13,
+          "n10": 0,
+          "p": 0.000244140625,
+          "p_holm": 0.000244140625,
+          "holds": true
+        },
+        "H1b": {
+          "comparator": "classifier_trust",
+          "n": 240,
+          "trustgate_harm": 1,
+          "comparator_harm": 23,
+          "harm_lower": true,
+          "n01": 22,
+          "n10": 0,
+          "p": 4.76837158203125e-07,
+          "p_holm": 9.5367431640625e-07,
+          "holds": true
+        }
+      },
+      "H2": {
+        "classifier_cache": {
+          "mean_difference": 0.002063492063492065,
+          "lower_one_sided_95": -0.021884724186704382,
+          "episodes": 300,
+          "buildings": 40,
+          "bootstrap_reps": 10000,
+          "seed": 13,
+          "noninferior": true
+        },
+        "classifier_trust": {
+          "mean_difference": -0.04238095238095238,
+          "lower_one_sided_95": -0.06973484466199054,
+          "episodes": 300,
+          "buildings": 40,
+          "bootstrap_reps": 10000,
+          "seed": 13,
+          "noninferior": false
+        }
+      },
+      "wins": false
+    }
+  },
+  "cross_model_win": false
+}
