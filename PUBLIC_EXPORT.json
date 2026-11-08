@@ -69,9 +69,36 @@
       "original_sha256": "45e1afd80216ba89391f0bf1a28e0147fa5fc15ce8aae542ec65445ad10c3d85",
       "export_sha256": "c1eb7ad8dab4d74ddbef1d100e8c3396afc26d8e2d08f4075ef4002d87a7d624",
       "scope": "portable paths, documentation references, or synthetic test-fixture location; no experimental outcome changed"
+    },
+    {
+      "file": "scripts/paper/make_numbers.py",
+      "source_relative_path": "paper/scripts/make_numbers.py",
+      "original_sha256": "b6682ef1bc9a31b7fe3e0691c0bb5f7680b04e8000dc72dabcd1ff193afbd0f8",
+      "export_sha256": "67bab6ff49758bf9867ce02343aee2b38e88f01d53e0607fc3690bbbd3ed1479",
+      "scope": "Public input paths and explicit output/private-input safeguards; table, rounding, caption and numerical algorithms unchanged"
+    },
+    {
+      "file": "scripts/paper/scenario_diagnostics.py",
+      "source_relative_path": "paper/scripts/scenario_diagnostics.py",
+      "original_sha256": "72242818c816a935f318781392a1c29fedefa4929c1b51c8f243ca14a9eca0d2",
+      "export_sha256": "2bab8a973a901c5c0770ecf9229bbce6c3b2b955c12b4cefc03d3eb572bdd8df",
+      "scope": "Public input paths and explicit output/private-input safeguards; table, rounding, caption and numerical algorithms unchanged"
+    },
+    {
+      "file": "data/paper/scenario_diagnostics.json",
+      "source_relative_path": "paper/generated/scenario_diagnostics.json",
+      "original_sha256": "68cbda84f4f6d8d71441c29e0d9129c47793076449691d86f51bfbd61031b5b9",
+      "export_sha256": "68cbda84f4f6d8d71441c29e0d9129c47793076449691d86f51bfbd61031b5b9",
+      "scope": "Unchanged aggregate numeric diagnostics; no attack or raw message text"
+    },
+    {
+      "file": "tests/fixtures/attacks.synthetic.yaml",
+      "original_sha256": "fa579f6e8300e8ad92e0f410f40a23b924137db3ebfd771b298329c8352b0d17",
+      "export_sha256": "d50c7a1df476fb18c20081c2127bd17b59dec690e4e6d520c5d179e17a788610",
+      "scope": "Comment separates family-list metadata from synthetic marker formats for strict six-gram scanning; parsed YAML unchanged"
     }
   ],
-  "numeric_data_exports": 33,
+  "numeric_data_exports": 34,
   "excluded_categories": [
     "unpublished manuscript, figures and manuscript audits",
     "private experimental attack templates and raw message/generation text",
@@ -80,5 +107,17 @@
     "internal development records and Git history",
     "aborted, duplicate, mock and transient monitoring runs"
   ],
-  "license": "No distribution license has been selected; no third-party model weights are distributed."
+  "license": "No distribution license has been selected; no third-party model weights are distributed.",
+  "generator_script_exports": 2,
+  "manuscript_exceptions": [
+    "scripts/paper/make_numbers.py",
+    "scripts/paper/scenario_diagnostics.py"
+  ],
+  "aggregate_scenario_diagnostics": "data/paper/scenario_diagnostics.json",
+  "comparison_tolerance": {
+    "rel_tol": 1e-09,
+    "abs_tol": 1e-12,
+    "discrete_values_and_decisions": "exact",
+    "file_digests": "exact"
+  }
 }

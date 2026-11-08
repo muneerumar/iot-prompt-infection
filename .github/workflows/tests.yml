@@ -3,11 +3,15 @@ on: [push, pull_request]
 jobs:
   test:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.12', '3.13']
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
-      - run: python -m pip install -e ".[dev]"
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install -e ".[dev,paper]"
       - run: python -m pytest -q
       - run: python scripts/reproduce_results.py --verify

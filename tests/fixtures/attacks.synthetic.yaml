@@ -10,6 +10,7 @@ split:
   - dormant
   - structured
   - fragmented
+# Public synthetic marker formats follow; the family split above is metadata.
 families:
   imperative: '{carrier} Synthetic system notice directive {canary}. {action}. {replicate}.
     {replicate_passive}.'

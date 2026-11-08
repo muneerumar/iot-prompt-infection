@@ -270,5 +270,32 @@
     "export_sha256": "48d467461e55034afb495d837c00cdf33b36dd3494f81656b72397d0807058b1",
     "rows": null,
     "removed_free_text_fields": {}
+  },
+  {
+    "path": "scripts/paper/make_numbers.py",
+    "source_relative_path": "paper/scripts/make_numbers.py",
+    "source_sha256": "b6682ef1bc9a31b7fe3e0691c0bb5f7680b04e8000dc72dabcd1ff193afbd0f8",
+    "export_sha256": "67bab6ff49758bf9867ce02343aee2b38e88f01d53e0607fc3690bbbd3ed1479",
+    "kind": "generator",
+    "rows": null,
+    "removed_free_text_fields": {}
+  },
+  {
+    "path": "scripts/paper/scenario_diagnostics.py",
+    "source_relative_path": "paper/scripts/scenario_diagnostics.py",
+    "source_sha256": "72242818c816a935f318781392a1c29fedefa4929c1b51c8f243ca14a9eca0d2",
+    "export_sha256": "2bab8a973a901c5c0770ecf9229bbce6c3b2b955c12b4cefc03d3eb572bdd8df",
+    "kind": "generator",
+    "rows": null,
+    "removed_free_text_fields": {}
+  },
+  {
+    "path": "data/paper/scenario_diagnostics.json",
+    "source_relative_path": "paper/generated/scenario_diagnostics.json",
+    "source_sha256": "68cbda84f4f6d8d71441c29e0d9129c47793076449691d86f51bfbd61031b5b9",
+    "export_sha256": "68cbda84f4f6d8d71441c29e0d9129c47793076449691d86f51bfbd61031b5b9",
+    "kind": "aggregate_data",
+    "rows": null,
+    "removed_free_text_fields": {}
   }
 ]

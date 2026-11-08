@@ -3,7 +3,7 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 *.egg-info/
-/.DS_Store
+.DS_Store
 /models/
 /private/*
 !/private/README.md

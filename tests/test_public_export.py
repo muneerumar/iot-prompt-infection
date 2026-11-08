@@ -34,5 +34,33 @@ def test_complete_archived_reanalysis():
     receipt = public.reproduce()
     assert receipt['primary_matches_archive'] and receipt['secondary_matches_archive']
     assert receipt['cross_model_win'] is False
-    assert receipt['model_wins'] == {'llama-4bit': True, 'qwen-4bit': False}
+    public.compare_json(receipt['model_wins'], {'llama-4bit': True, 'qwen-4bit': False})
+    assert set(receipt['max_abs_float_deviation']) == {'primary', 'secondary'}
+    assert all(value >= 0 for value in receipt['max_abs_float_deviation'].values())
     assert {v['rows'] for v in receipt['health'].values()} == {1920}
+
+
+def test_recursive_comparison_reports_maximum_float_deviation():
+    a = {'values': [0.0, {'bound': -0.07 + 1e-13}, float('nan')], 'wins': False}
+    b = {'wins': False, 'values': [1e-13, {'bound': -0.07}, float('nan')]}
+    assert public.compare_json(a, b) == pytest.approx(1e-13, rel=1e-3)
+    assert public.compare_json([1, 2.0, None, 'x'], [1.0, 2, None, 'x']) == 0
+    assert public.compare_json([float('inf'), -float('inf')],
+                               [float('inf'), -float('inf')]) == 0
+
+
+@pytest.mark.parametrize('actual,archived', [
+    (1, 2), (True, 1), (False, 0.0), (1.0 + 1e-13, 1),
+    ('1', 1), (None, False), (float('nan'), 0.0), (1.0, 1.0 + 2e-9),
+    ({'a': 1}, {'b': 1}), ([1], [1, 2]),
+])
+def test_recursive_comparison_rejects_discrete_structure_and_large_float_changes(actual, archived):
+    with pytest.raises(ValueError, match=r'\$\["nested"\]\[0\].*actual=.*archived='):
+        public.compare_json({'nested': [actual]}, {'nested': [archived]})
+
+
+@pytest.mark.parametrize('decision', ['holds', 'wins', 'cross_model_win'])
+def test_decisions_are_exact_even_beside_tolerable_float_noise(decision):
+    with pytest.raises(ValueError, match=decision):
+        public.compare_json({'mean': 0.1 + 1e-13, decision: True},
+                            {'mean': 0.1, decision: False})

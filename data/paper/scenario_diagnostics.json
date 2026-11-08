@@ -1,0 +1,21 @@
+{
+ "benign_episode_ticket_messages": 134,
+ "models": {
+  "llama": {
+   "trustgate_alert_hold_on_expected_pairs": {
+    "events": 27,
+    "events_in_window": 14,
+    "episodes": 11
+   },
+   "screen_all_benign_ticket_flags": 0
+  },
+  "qwen": {
+   "trustgate_alert_hold_on_expected_pairs": {
+    "events": 2,
+    "events_in_window": 1,
+    "episodes": 2
+   },
+   "screen_all_benign_ticket_flags": 39
+  }
+ }
+}

@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import math
 from pathlib import Path
 import sys
 
@@ -20,6 +21,43 @@ RUNS = {
     'qwen-4bit': '20261107-023314_round2c_20261106-122409_confirm_qwen-4bit',
 }
 ANALYSIS = '20261107-183408_round2_confirmatory_analysis'
+
+
+def compare_json(actual, archived, path='$'):
+    """Require identical JSON structure and exact discrete values; tolerate float noise.
+
+    Return the largest absolute deviation between corresponding float values.
+    Matching NaNs and infinities contribute zero deviation.
+    """
+    def mismatch(detail):
+        raise ValueError(f'{path}: {detail}; actual={actual!r}; archived={archived!r}')
+
+    if isinstance(actual, dict) and isinstance(archived, dict):
+        if actual.keys() != archived.keys():
+            mismatch('different dictionary keys')
+        return max((compare_json(actual[key], archived[key],
+                                 path + '[' + json.dumps(key) + ']')
+                    for key in actual), default=0.0)
+    if isinstance(actual, list) and isinstance(archived, list):
+        if len(actual) != len(archived):
+            mismatch('different list lengths')
+        return max((compare_json(a, b, f'{path}[{i}]')
+                    for i, (a, b) in enumerate(zip(actual, archived))), default=0.0)
+    if isinstance(actual, float) and isinstance(archived, float):
+        if math.isnan(actual) and math.isnan(archived):
+            return 0.0
+        if not math.isclose(actual, archived, rel_tol=1e-9, abs_tol=1e-12):
+            mismatch('floats outside rel_tol=1e-9, abs_tol=1e-12')
+        return 0.0 if actual == archived else abs(actual - archived)
+    # bool is deliberately excluded from numeric coercion (True must not match 1).
+    if ((type(actual) is int and isinstance(archived, float)) or
+            (isinstance(actual, float) and type(archived) is int)):
+        if actual != archived:
+            mismatch('integer/float values must be exactly equal')
+        return 0.0
+    if type(actual) is not type(archived) or actual != archived:
+        mismatch('different exact values or types')
+    return 0.0
 
 
 def digest(path):
@@ -63,21 +101,20 @@ def reproduce(output=None):
     model_rows, health = load_completed()
     archived = ROOT / 'data/runs' / ANALYSIS
     primary = both_models_primary(model_rows)
-    if primary != json.loads((archived / 'primary.json').read_text()):
-        raise ValueError('Primary results differ from the archived analysis')
+    primary_deviation = compare_json(primary, json.loads((archived / 'primary.json').read_text()))
     target = Path(output) if output is not None else None
     if target is not None:
         target.mkdir(parents=True, exist_ok=False)
         (target / 'primary.json').write_text(json.dumps(primary, indent=2) + '\n')
     # The primary result has been computed, checked and optionally persisted first.
     secondary = secondary_tables(model_rows)
-    if secondary != json.loads((archived / 'secondary.json').read_text()):
-        raise ValueError('Secondary tables differ from the archived analysis')
+    secondary_deviation = compare_json(secondary, json.loads((archived / 'secondary.json').read_text()))
     receipt = {
         'verified_data_files': verified_files,
         'health': health,
         'primary_matches_archive': True,
         'secondary_matches_archive': True,
+        'max_abs_float_deviation': {'primary': primary_deviation, 'secondary': secondary_deviation},
         'cross_model_win': primary['cross_model_win'],
         'model_wins': {key: value['wins'] for key, value in primary['models'].items()},
         'model_generations': 0,

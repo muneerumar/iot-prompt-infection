@@ -1,24 +1,155 @@
 {
   "core_algorithm_modules_unchanged": 28,
-  "export_files_before_validation_receipt": 127,
   "disallowed_name_matches": 0,
   "credential_matches": 0,
   "machine_local_path_matches": 0,
-  "script_count": 24,
-  "test_file_count": 15,
-  "data_size_bytes": 71870528,
-  "regression_tests_passed": 125,
+  "script_count": 26,
+  "test_file_count": 16,
+  "regression_tests_passed": 142,
   "regression_returncode": 0,
-  "regression_output": "125 passed in 5.81s",
-  "primary_and_secondary_reanalysis": "exact match with archived JSON",
+  "primary_and_secondary_reanalysis": "Exact on the locked Python 3.11 stack; floats within rel_tol=1e-9 and abs_tol=1e-12 on newer stacks; all discrete fields and decisions exact",
   "confirmatory_rows_per_model": 1920,
   "confirmatory_episode_files_byte_identical_to_source": true,
-  "supporting_data_files": 33,
+  "supporting_data_files": 34,
   "unpublished_manuscript_artifacts_included": false,
   "private_experimental_attack_text_included": false,
   "model_weights_included": false,
-  "original_working_checkout_modified": false,
   "original_frozen_design_verified": true,
-  "validation_environment": "existing project Python environment; no clean network dependency installation performed",
-  "new_experiment_generations": 0
+  "validation_environment": "Three fresh isolated environments on macOS arm64: Python 3.11 with requirements.lock constraints and Matplotlib 3.11.2; Python 3.12 and 3.13 with latest resolved packages",
+  "new_experiment_generations": 0,
+  "manuscript_generator_exceptions": [
+    "scripts/paper/make_numbers.py",
+    "scripts/paper/scenario_diagnostics.py"
+  ],
+  "generator_source_exports": [
+    {
+      "path": "scripts/paper/make_numbers.py",
+      "source_relative_path": "paper/scripts/make_numbers.py",
+      "source_sha256": "b6682ef1bc9a31b7fe3e0691c0bb5f7680b04e8000dc72dabcd1ff193afbd0f8",
+      "export_sha256": "67bab6ff49758bf9867ce02343aee2b38e88f01d53e0607fc3690bbbd3ed1479",
+      "kind": "generator",
+      "rows": null,
+      "removed_free_text_fields": {}
+    },
+    {
+      "path": "scripts/paper/scenario_diagnostics.py",
+      "source_relative_path": "paper/scripts/scenario_diagnostics.py",
+      "source_sha256": "72242818c816a935f318781392a1c29fedefa4929c1b51c8f243ca14a9eca0d2",
+      "export_sha256": "2bab8a973a901c5c0770ecf9229bbce6c3b2b955c12b4cefc03d3eb572bdd8df",
+      "kind": "generator",
+      "rows": null,
+      "removed_free_text_fields": {}
+    }
+  ],
+  "aggregate_scenario_diagnostics": {
+    "path": "data/paper/scenario_diagnostics.json",
+    "sha256": "68cbda84f4f6d8d71441c29e0d9129c47793076449691d86f51bfbd61031b5b9",
+    "numeric_counts_only": true
+  },
+  "new_generator_files": 2,
+  "date": "2026-11-08",
+  "public_base_commit": "e91c386154d8ccdf6b58ee84e203f25858a385ac",
+  "original_experiment_modified": false,
+  "data_runs_modified": false,
+  "preregistration_modified": false,
+  "synthetic_fixture_parsed_yaml_unchanged": true,
+  "comparison_tolerance": {
+    "rel_tol": 1e-09,
+    "abs_tol": 1e-12,
+    "nan_equals_nan": true,
+    "integer_float_comparison": "exact equality only",
+    "counts_and_decisions": "exact",
+    "file_digests": "exact"
+  },
+  "leak_scan": {
+    "files_scanned": 133,
+    "tokenization": "Case-folded Unicode word tokens, contiguous 6-grams; complete intended Git publication tree",
+    "allowed_fixture_occurrences": 4,
+    "unexpected_occurrences": 0,
+    "matched_text_printed": false,
+    "tool_name_matches": [],
+    "credential_matches": [],
+    "local_path_matches": [],
+    "prohibited_files": []
+  },
+  "source_export_hashes_recorded_in": "data/provenance/exported_files.json",
+  "manuscript_still_excluded": true,
+  "generated_tex_and_figures_committed": false,
+  "license_decision": "pending with authors; no license added",
+  "python_matrix": {
+    "3.11": {
+      "python": "3.11.17",
+      "packages": {
+        "numpy": "2.4.6",
+        "scipy": "1.17.1",
+        "statsmodels": "0.15.0",
+        "pyyaml": "6.0.3",
+        "matplotlib": "3.11.2",
+        "pytest": "9.2.0",
+        "pandas": "3.1.0"
+      },
+      "pytest_passed": 142,
+      "pytest_returncode": 0,
+      "reanalysis_returncode": 0,
+      "max_abs_float_deviation": {
+        "primary": 0.0,
+        "secondary": 0.0
+      },
+      "all_counts_and_decisions_match": true,
+      "tex_hashes_matched": 9,
+      "tex_hashes_total": 9,
+      "three_vector_figures_created": true
+    },
+    "3.12": {
+      "python": "3.12.15",
+      "packages": {
+        "numpy": "2.5.4",
+        "scipy": "1.18.1",
+        "statsmodels": "0.15.0",
+        "pyyaml": "6.0.3",
+        "matplotlib": "3.11.2",
+        "pytest": "9.2.0",
+        "pandas": "3.1.1"
+      },
+      "pytest_passed": 142,
+      "pytest_returncode": 0,
+      "reanalysis_returncode": 0,
+      "max_abs_float_deviation": {
+        "primary": 1.3877787807814457e-17,
+        "secondary": 4.440892098500626e-16
+      },
+      "all_counts_and_decisions_match": true,
+      "tex_hashes_matched": 9,
+      "tex_hashes_total": 9,
+      "three_vector_figures_created": true
+    },
+    "3.13": {
+      "python": "3.13.17",
+      "packages": {
+        "numpy": "2.5.4",
+        "scipy": "1.18.1",
+        "statsmodels": "0.15.0",
+        "pyyaml": "6.0.3",
+        "matplotlib": "3.11.2",
+        "pytest": "9.2.0",
+        "pandas": "3.1.1"
+      },
+      "pytest_passed": 142,
+      "pytest_returncode": 0,
+      "reanalysis_returncode": 0,
+      "max_abs_float_deviation": {
+        "primary": 1.3877787807814457e-17,
+        "secondary": 4.440892098500626e-16
+      },
+      "all_counts_and_decisions_match": true,
+      "tex_hashes_matched": 9,
+      "tex_hashes_total": 9,
+      "three_vector_figures_created": true
+    }
+  },
+  "checksum_manifest": {
+    "entries": 132,
+    "command": "sha256sum -c SHA256SUMS",
+    "passed": true
+  }
 }
